@@ -1,0 +1,21 @@
+{
+  "name": "Rey del Lechón Asado",
+  "short_name": "Lechón Asado",
+  "description": "App del Reino del Sabor: pedidos, cotizaciones y promociones de lechón asado.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f3e2b0",
+  "theme_color": "#5a3e1b",
+  "icons": [
+    {
+      "src": "logo_sin fondo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "logo_sin fondo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

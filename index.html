@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>👑 El Rey del lechón Asado</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+
+  <link rel="manifest" href="manifest.json">
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("service-worker.js")
+        .then(() => console.log("✅ Service Worker registrado correctamente"))
+        .catch((err) => console.error("❌ Error al registrar el SW:", err));
+    }
+  </script>
+
+</head>
+
+<body>
+
+  <div class="form-container">
+    <h2>👑 Pedido Real del Lechón Asado </h2>
+    <form id="pedidoForm">
+      <label for="nombre">Nombre del comensal:</label>
+      <input type="text" id="nombre" required>
+
+      <label for="telefono">Teléfono:</label>
+      <input type="text" id="telefono" required>
+
+      <label for="direccion">Dirección:</label>
+      <textarea id="direccion" required></textarea>
+
+      <label for="pedido">Número de porciones:</label>
+      <input type="text" id="pedido" required>
+
+      <label for="estado">Estado del pedido:</label>
+      <select id="estado" required>
+        <option value="Pendiente">Pendiente</option>
+        <option value="Pagado">Pagado</option>
+        <option value="Entregado">Entregado</option>
+      </select>
+
+      <button type="submit">⚔️ Guardar en el Reino</button>
+    </form>
+  </div>
+
+  <div id="mensajeVentana">
+    <img id="iconoVentana" src="" alt="icono">
+    <span id="mensajeTexto"></span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
