@@ -94,7 +94,6 @@ button:hover {
   margin: 0 auto 10px auto;
 }
 
-
 /* 📱 Ajustes responsive para pantallas pequeñas */
 @media (max-width: 768px) {
   body {

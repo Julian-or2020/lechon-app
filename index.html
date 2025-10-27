@@ -36,6 +36,10 @@
       <label for="pedido">Número de porciones:</label>
       <input type="text" id="pedido" required>
 
+      <label for="barrio">Barrio:</label>
+      <input list="listaBarrios" id="barrio" name="barrio" placeholder="Escribe o selecciona tu barrio" required />
+      <datalist id="listaBarrios"></datalist>
+
       <label for="estado">Estado del pedido:</label>
       <select id="estado" required>
         <option value="Pendiente">Pendiente</option>
