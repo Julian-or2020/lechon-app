@@ -10,7 +10,7 @@ document.getElementById("pedidoForm").addEventListener("submit", async (e) => {
   
 
   const data = { nombre, telefono, direccion, pedido, barrio, estado };
-  const scriptURL = "https://script.google.com/macros/s/AKfycbyZ91G6kQwsrsxYteghv4ptP27PeUNwx6BdxIZH3H6-GNXnd0BpiNeC2okUFlnQdXU/exec";
+  const scriptURL = "https://script.google.com/macros/s/AKfycbwJQRNLvxtKytA5-nzUkZQU4MV6aUNKNyDgRtMLR0vC-9KiH4aHyzsN_2mNO7sWfmyY/exec";
 
   try {
     await fetch(scriptURL, {
